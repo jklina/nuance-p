@@ -14,3 +14,7 @@ exports.about = function(req, res){
 exports.portfolio = function(req, res){
   res.render('portfolio', { title: 'Portfolio' })
 };
+
+exports.contact = function(req, res){
+  res.render('contact', { title: 'Get in Touch' })
+};
