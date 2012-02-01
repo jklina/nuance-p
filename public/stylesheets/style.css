@@ -135,7 +135,7 @@ hr {
   margin: 0 1.0416666666666665%;
   *width: 47.91666666666667% -correction;
   *margin: 0 1.0416666666666665% -correction;
-  background: url("..images/hero.png") no-repeat;
+  background: url("../images/hero.png") no-repeat;
   height: 338px;
 }
 /* CONTENT */
@@ -156,9 +156,9 @@ hr {
   display: inline;
   float: left;
   overflow: hidden;
-  width: 14.583333333333334%;
+  width: 97.91666666666666%;
   margin: 0 1.0416666666666665%;
-  *width: 14.583333333333334% -correction;
+  *width: 97.91666666666666% -correction;
   *margin: 0 1.0416666666666665% -correction;
   font-style: italic;
 }

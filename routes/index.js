@@ -18,3 +18,7 @@ exports.portfolio = function(req, res){
 exports.contact = function(req, res){
   res.render('contact', { title: 'Get in Touch' })
 };
+
+exports.services = function(req, res){
+  res.render('services', { title: 'Services' })
+};
