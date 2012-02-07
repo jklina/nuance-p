@@ -123,8 +123,9 @@ hr {
   background: url("../images/button.png") no-repeat;
   width: 254px;
   height: 64px;
-  text-indent: -999em;
+  text-indent: -1000em;
   background-position: top;
+  display:block;
 }
 #button:hover {
   background-position: center;
