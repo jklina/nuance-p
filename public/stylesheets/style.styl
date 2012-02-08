@@ -40,6 +40,7 @@ h3, .head
   letter-spacing .125em
   margin-bottom 0
   font-weight normal
+  font-size 100%
 
 
 header
@@ -133,8 +134,11 @@ hr
   font-style italic
   margin-bottom 1em
   
-#content .title h3
+#content .title h2
   margin-bottom 0
+  
+.title p
+  margin-top 0
   
 .description
   font-style italic
@@ -146,13 +150,16 @@ hr
   column(12)
   margin-bottom 1em
   border 1px solid white
-  box-shadow 0px 0px 3px #777
+  box-shadow 0 0 2px #777
 
 #content .quart p
   font-family sans
   font-size .9em
   font-weight 300
   margin-bottom 3em
+  
+#index-container .quart p
+  margin-bottom 1em
 
 #content hgroup a
   font-size italic
@@ -165,8 +172,8 @@ hr
 .project-info
   column(4)
 
-.project-name
-  margin-bottom 0
+.project-info p
+  margin-top 0
 
 .screenshot
   column(8)
@@ -196,9 +203,10 @@ hr
   color #555
   font-size 90%
   letter-spacing .125em
+  margin-top 0
+  font-style italic
 
 .person img
-  border 1px solid black
   margin-bottom 1em
   width 100%
 
@@ -274,7 +282,7 @@ author
   background-image url('../images/contact-border.png')
   border-radius 5px
   box-shadow 0 0 3px #777
-  margin 1em
+  margin 3em
   padding .5em
   push(1)
 
