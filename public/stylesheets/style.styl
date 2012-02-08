@@ -31,11 +31,13 @@ h2
   letter-spacing .125em
   font-size 125%
   font-size italic
+  font-weight normal
 
 h3, .head
   text-transform uppercase
   letter-spacing .125em
   margin-bottom 1em
+  font-weight normal
 
 header
   background-image url('../images/header-bg.png')
@@ -269,19 +271,27 @@ author
   background-image url('../images/contact-border.png')
   border-radius 5px
   box-shadow 0 0 3px #777
+  margin 1em
   padding .5em
-  margin 1em 0
   push(1)
 
 #contact-top
-  background-color white
   column(12)
+  margin 0
+  width 100%
+  background-color white
   border-radius 5px
   border 1px solid #C9C9C9
-  margin-left 0
-  padding-top 1em
-  padding-bottom 1em
-  width 100%
+  
+#contact-container
+  column(12)
+  margin-bottom: 1em
+
+#contact-container h2
+  margin 1em 0 0 0
+
+#contact-container p
+  margin 0
 
 #left
   column(5)
@@ -291,6 +301,9 @@ author
 
 label
   column(12)
+
+input, #message_body
+  column(12)
   background none repeat scroll 0 0 #fff
   border 1px solid #ddd
   border-radius 3px
@@ -298,6 +311,13 @@ label
   color #545658
   height 2.5em
   margin-bottom 1.5em
+  
+#message_body
+  height: 13em
+  
+.buttons
+  float right
+  margin-right 1em
 
 textarea
   height 14em

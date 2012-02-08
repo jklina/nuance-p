@@ -58,3 +58,8 @@ column(x, columns = columns)
 
 offset(offset = 1)
 	margin-left total-width*(((gutter-width+column-width)*offset + (gutter-width*0.5))/_gridsystem-width)
+	
+push(offset = 1)
+  margin-left: total-width*(((gutter-width+column-width)*offset) / _gridsystem-width) + total-width*((gutter-width*.5)/_gridsystem-width);
+
+  

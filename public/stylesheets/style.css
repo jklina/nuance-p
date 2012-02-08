@@ -38,12 +38,14 @@ h2 {
   letter-spacing: 0.125em;
   font-size: 125%;
   font-size: italic;
+  font-weight: normal;
 }
 h3,
 .head {
   text-transform: uppercase;
   letter-spacing: 0.125em;
   margin-bottom: 1em;
+  font-weight: normal;
 }
 header {
   background-image: url("../images/header-bg.png");
@@ -417,11 +419,11 @@ author {
   -webkit-box-shadow: 0 0 3px #777;
   -moz-box-shadow: 0 0 3px #777;
   box-shadow: 0 0 3px #777;
+  margin: 1em;
   padding: 0.5em;
-  margin: 1em 0;
+  margin-left: 8.420138888888888%;
 }
 #contact-top {
-  background-color: #fff;
   display: inline;
   float: left;
   overflow: hidden;
@@ -429,14 +431,29 @@ author {
   margin: 0 1.0416666666666665%;
   *width: 97.91666666666666% -correction;
   *margin: 0 1.0416666666666665% -correction;
+  margin: 0;
+  width: 100%;
+  background-color: #fff;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #c9c9c9;
-  margin-left: 0;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  width: 100%;
+}
+#contact-container {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  *width: 97.91666666666666% -correction;
+  *margin: 0 1.0416666666666665% -correction;
+  margin-bottom: 1em;
+}
+#contact-container h2 {
+  margin: 1em 0 0 0;
+}
+#contact-container p {
+  margin: 0;
 }
 #left {
   display: inline;
@@ -464,6 +481,16 @@ label {
   margin: 0 1.0416666666666665%;
   *width: 97.91666666666666% -correction;
   *margin: 0 1.0416666666666665% -correction;
+}
+input,
+#message_body {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  *width: 97.91666666666666% -correction;
+  *margin: 0 1.0416666666666665% -correction;
   background: none repeat scroll 0 0 #fff;
   border: 1px solid #ddd;
   -webkit-border-radius: 3px;
@@ -475,6 +502,13 @@ label {
   color: #545658;
   height: 2.5em;
   margin-bottom: 1.5em;
+}
+#message_body {
+  height: 13em;
+}
+.buttons {
+  float: right;
+  margin-right: 1em;
 }
 textarea {
   height: 14em;
