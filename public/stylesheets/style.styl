@@ -1,344 +1,464 @@
 @import libs
 
-box-shadow(args...)
-   -webkit-box-shadow args
-   -moz-box-shadow args
-   box-shadow args
-
-.container
-  width 1140px
-  margin 0 auto
-  overflow hidden
+$red = #cc333f 
+$grey = #aaa
 
 body
-  margin: 0
-  font-size 100%
-  font-family serif
-  line-height 1.5em
-
-a
-  text-decoration none
-  color blue
-
-a:hover
-  color yellow
-
-p
-  margin-bottom 1em
+  font-family $sans
+  margin 0
+  background-image url('../images/tile-black.gif')
+  font-size 110%
   
-
-
-h2
-  text-transform uppercase
-  letter-spacing .125em
-  font-size 125%
-  font-size italic
-  font-weight normal
-
-h3, .head
-  text-transform uppercase
-  letter-spacing .125em
-  margin-bottom 0
-  font-weight normal
-  font-size 100%
-
-
 header
-  background-image url('../images/header-bg.png')
-  padding-top 0em
+  background-color white
+
+.container
+  width 1180px
+  margin 0 auto
+  overflow hidden
+  
+a 
+  text-decoration none
+  color $grey
+  
+a:hover
+  color $red
+
+h1, label
+  font-size 1em
+  text-transform uppercase
+  letter-spacing .15em
+  font-weight normal
+  
+  
+.description
+  color $grey
+  font-size .85em
+  line-height 1.6em
+  
+.tagline 
+  column(12)  
+  
+hr 
+  margin-top 3em
+
+.bottom 
+  margin-top 0
+  margin-bottom 2em
+  
+.double
+  border-style none
+  height 3px
+  background-image url('../images/hr-double.png')
+
+.single
+  border-style none
+  height 1px
+  background-image url('../images/hr-single.png')
+  margin-bottom 0
+  
+.black
+  color white
+
+.black hgroup a
+  color white
+
+.blue 
+  background-image url('../images/tile-blue.gif')
+  color white
+  
+.blue hgroup a
+  color white
+  
+.light
+  background-image url('../images/tile-light.gif')
+
+.light p, .light a 
+  color #313131
+
 
 #logo
   column(4)
-  background: url('../images/logo.png') no-repeat
-  height 134px
+  background url('../images/logo.png') no-repeat
+  height 93px
   text-indent -999em
-
+  margin 12px 0
+  
 #logo:hover
   background url('../images/logo_hover.png') no-repeat
 
-// Nav
+ul
+  float right
 
+li 
+  list-style none
+  float left
+  
 nav
   column(8)
-  text-align right
-  text-transform uppercase
-  padding-top 56px
-  letter-spacing .125em
-
-nav span
-  color yellow
-  margin-left 20px
+  letter-spacing .15em
+  margin-bottom 24px
+  margin-top 24px
+  
+nav hgroup
+  margin-left 30px
 
 nav a
-  color light
-  margin-left 20px
+  color black
+  letter-spacing .125em
+  text-transform uppercase
 
 nav a:hover
-  color yellow
-
-hr
-  column(12)
-  border none
-  height 2px
-  background url('../images/hr.gif')
-  margin-bottom: 2em
-
-#banner
-  background-image url('../images/header-bg.png')
-  overflow auto
-
-#info
-  column(6)
-  color white
-  font-family sans
-  font-weight 300
-  font-size 1.5em
-  line-height 1.5em
-
-#button
-  background url('../images/button.png') no-repeat
-  width 254px
-  height 64px
-  text-indent -999em
-  background-position top
-  display: block
-
-#button:hover
-  background-position center
-
-#button:active
-  background-position bottom
-
-#hero
-  column(6)
-  background url('../images/hero.png') no-repeat
-  height 338px
-
-/* CONTENT */
-
-#content
-  background-image url('../images/content-bg.png')
-
-#content-separator-top
-  background-image url('../images/content-separator-top.png')
-  height 9px
-  margin-bottom 1em
-
-#content-separator-bottom
-  background-image url('../images/content-separator-bottom.png')
-  height 10px
-  margin-top 3em
-
-#content .title
-  column(12)
-  font-style italic
-  margin-bottom 1em
+  color $red
   
-#content .title h2
-  margin-bottom 0
-  
-.title p
-  margin-top 0
-  
-.description
-  font-style italic
+nav .description
+  letter-spacing 0
 
-#content .quart
-  column(3)
-
-#content .quart img
-  column(12)
-  margin-bottom 1em
-  border 1px solid white
-  box-shadow 0 0 2px #777
-
-#content .quart p
-  font-family sans
-  font-size .9em
-  font-weight 300
-  margin-bottom 3em
-  
-#index-container .quart p
-  margin-bottom 1em
-
-#content hgroup a
-  font-size italic
-
-.project
-  column(12)
-  width 100%
-  margin 0
-
-.project-info
-  column(4)
-
-.project-info p
-  margin-top 0
-
-.screenshot
-  column(8)
-  float right
-  border 4px solid white
-  box-shadow 0px 0px 3px #777
-  margin 0 5px
-  margin-bottom 5em
-
-#intro
-  column(4)
-  font-size 112.5%
-
-#intro img
-  width 100%
-
-.person
-  column(4)
-
-.person hr
-  height 0
-  border-top 1px solid #959595
-  margin-bottom 1em
-
-.job-title
-  text-transform uppercase
-  color #555
-  font-size 90%
-  letter-spacing .125em
-  margin-top 0
-  font-style italic
-
-.person img
-  margin-bottom 1em
-  width 100%
-
-.person-description
-  font-size 112.5%
-
-/* FOOTER */
-
-footer
-  background-image url('../images/footer-bg.png')
-  padding 2em
-
-.dots
-  column(12)
-  background-image url('../images/dots.gif')
-  height 1px
-  margin 1em 0
-
-.head, .location
-  column(5)
-  margin-left 0
-
-.subhead, .number
-  column(7)
+.banner
+  height 399px
 
 #testimonial
-  column(6)
-
-#bubble-wrap
-  column(12)
-  margin 0
-
-#bubble
-  background light
-  border solid 1px #b9bab6
-  box-shadow 0px 1px 1px #fff
-
-#bubble p
-  padding 1em
-  font-style italic
-  line-height 1.5em
-  font-size 125%
-
-#tail
-  background-image url('../images/tail.png')
-  width 20px
-  height 17px
-  margin -3px 0 0 40px
-  z-index 100
-
+  column(8)
+  font-size 1em
+  line-height 1.7em
+  
 #author
-  column(12)
-  margin-top .5em
-
+  float right
+  font-size .85em
+  
 author
-  text-transform uppercase
-
+  font-weight bold
+  
 #location
-  font-style italic
+  color $grey
+  
+#contact
+  column(4)
+  
+#contact h1
+  margin-bottom 0
+  
+#contact a
+  color $red
+  
+.location
+  column(6)
+  margin-left 0
+
+.number
+  column(6)
+  text-align right
+  margin-right 0
+  float right
 
 #twitter
   column(6)
-
-#contact
+  margin 1.5em 0
+  font-size .85em
+  
+#portal
   column(6)
+  text-align right
+  margin 1.5em 0
+  float right
+  font-size .85em
+
+#copyright
+  column(12)
+  margin 1.5em 0
+  font-size .85em
+  
+#copyright a
+  color $red
+  
+.white
+  background-color white
+  color black
+  
+
+/* Index  */
+
+#banner-index
+  background-image url('../images/banner-index.png')
+  
+#info
+  column(6)
+  color white
+  font-size 1.4em
+  text-shadow 1px 1px 4px #111
+  font-weight 300
+  margin-top 3em
+
+
+#button
+  background url('../images/button.png') 
+  height 53px
+  width 225px
+  float right
+  text-indent -999em
+  -moz-box-shadow: 0px 2px 2px #222
+  -webkit-box-shadow: 0px 2px 2px #222
+  box-shadow: 0px 2px 2px #222
+  margin 5px
+
+#button:hover
+	background-position 0 -53px
+	
+#button:active
+	background-position 0 -106px
+	-moz-box-shadow: 0px 1px 1px rgba(255,255,255,0.3)
+  -webkit-box-shadow: 0px 1px 1px rgba(255,255,255,0.3)
+  box-shadow: 0px 1px 1px rgba(255,255,255,0.3)
+
+
+  
+#hero
+  column(6)
+  background url('../images/hero.png') no-repeat
+  margin-top 61px
+  height 338px
+
+.quart 
+  column(3)
+
+.quart a
+  color white
+  font-size .85em
+  font-weight bold
+  text-transform uppercase
+  
+.quart a:hover
+  color $red
+  
+
+
+/* Services  */
+
+#banner-services
+  background-image url('../images/banner-services.png')
+  
+.half
+  column(6)
+  
+.half img
+  width 32px
+  margin-top 4px
+  float left
+  
+.half hgroup
+  column(11)
+  float right
+  
+#ecommerce
+ margin-bottom 3em
+  
+
+/* Portfolio  */
+#banner-portfolio
+  background-image url('../images/banner-portfolio.png')
+  
+.project
+  column(12)
+  margin-top 4em
+
+.project-info
+  column(4)
+  
+.project-info a
+  font-size .85em
+  font-weight bold
+  text-transform uppercase
+
+.project-info a:hover
+  color $red
+  
+.screenshot
+  column(8)
+  float right
+  border-size 1px solid
+  margin-bottom 4em
+  -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+  
+  
+.phase-info
+  column(4)
+
+#phases 
+  column(8)
+
+.phase
+  height 20px
+  border-radius 10px
+  margin-bottom 10px
+
+#discovery-bar
+  background-color #0095a8
+  width 13.3333%
+  
+#discovery-bar:hover
+  background-color #11b0b9
+  
+#design-bar
+  background-color #5d4136
+  width 33.3333%
+  margin-left 13.3333%
+
+#design-bar:hover
+  background-color #6a4a3c
+
+#frontend-bar
+  background-color #c62d38
+  width 33.3333%
+  margin-left 26.6666%
+  
+#frontend-bar:hover
+  background-color #cc333f
+  
+#backend-bar
+  background-color #e95c3a
+  width 33.3333%
+  margin-left 46.6666%
+  
+#backend-bar:hover
+  background-color #eb6841
+
+#deployment-bar
+  background-color #ebc348
+  width 20%
+  margin-left 80%
+  margin-bottom 6em
+  
+#deployment-bar:hover
+  background-color #fad96c
+  
+
+/* About  */
+#banner-about
+  background-image url('../images/banner-about.png')
+
+#intro
+  column(8)
+  
+#intro a
+  color $red
+  
+#map 
+  column(4) 
+
+#map img
+  column(12)
   margin-top 2em
 
-#twitter_update_list
-  list-style-type none
+#josh, #christian
+  margin 4em 0
 
-#contact-back
-  column(10)
-  background-image url('../images/contact-border.png')
-  border-radius 5px
-  box-shadow 0 0 3px #777
-  margin 3em
-  padding .5em
-  push(1)
+.bio
+  column(6)
 
-#contact-top
-  column(12)
-  margin 0
-  width 100%
-  background-color white
-  border-radius 5px
-  border 1px solid #C9C9C9
+.bio img
+  column(3)
+
+.bio hgroup
+  column(9)
   
-#contact-container
-  column(12)
-  margin-bottom: 1em
+.bio hr
+  margin-top 0
+  
+.bio hgroup a
+  color $red
 
-#contact-container h2
-  margin 1em 0 0 0
+  
+/* About  */
+#banner-contact
+  background-image url('../images/banner-contact.png')
+  
+form 
+  margin-top 3em
 
-#contact-container p
-  margin 0
+#budget-note
+  column(4)
 
 #left
-  column(5)
-
+  column(4)
+  
 #right
-  column(7)
+  column(4)
 
-label
+label, input, select, textarea
   column(12)
-
-input, #message_body
-  column(12)
-  background none repeat scroll 0 0 #fff
-  border 1px solid #ddd
-  border-radius 3px
-  box-shadow 0 1px 3px rgba(0, 0, 0, 0.15) inset, -5px -5px 0 0 #F5F5F6, 5px 5px 0 0 #F5F5F6, 5px 0 0 0 #F5F5F6, 0 5px 0 0 #F5F5F6, 5px -5px 0 0 #F5F5F6, -5px 5px 0 0 #F5F5F6
-  color #545658
-  height 2.5em
-  margin-bottom 1.5em
+  border-radius 4px
   
-#message_body
-  height: 13em
+input, select, textarea
+  background-color #111
+  border 1px solid #2d2d2d
+  font-size 1em
+  color white
+  outline none
+  width 90%
+  padding 10px
+  -webkit-appearance none
   
-.buttons
-  float right
-  margin-right 1em
+input, textarea
+  -moz-box-shadow inset 0 0 5px #000000;
+  -webkit-box-shadow inset 0 0 5px #000000;
+  box-shadow inset 0 0 5px #000000;
 
-textarea
-  height 14em
-  padding-top 1em
+input:hover, select:hover, textarea:hover
+  border-color #333
 
-input:focus, textarea:focus
-  background none repeat scroll 0 0 #fff
-  border 1px solid #bbb
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset, -5px -5px 0 0 #F1F1F3, 5px 5px 0 0 #F1F1F3, 5px 0 0 0 #F1F1F3, 0 5px 0 0 #F1F1F3, 5px -5px 0 0 #F1F1F3, -5px 5px 0 0 #F1F1F3
-  color #545658
+input:focus, select:focus, textarea:focus
+  border-color #444
 
 select
-  column(12)
+  width 98%
+  margin 5px 
+  -moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+  box-shadow 0px 2px 2px rgba(0,0,0,0.3);
+  background #111 url('../images/select.png') no-repeat right center
+  border-radius 4px
+  
+optgroup
+  border 0
+  border none
+
+option
+  border none
+  
+select:hover
+    background #121212 url('../images/select-hover.png') no-repeat right center
+    
+textarea 
+  height 16em
+  
+label 
+  margin-bottom .5em
+
+input 
+  margin-bottom 1em
+  
+#submit
+  width 55%
+  margin-top 2em
+  float right
+  padding 10px
+  text-transform uppercase
+  letter-spacing .125em
+  -moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+  
+#submit:hover
+  background-color #121212
+
+
+
+  
+/* RWD */
+@media screen and (max-width: 1140px) {
+ .container {
+   width: 100%;
+  }
+}
