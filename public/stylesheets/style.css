@@ -92,7 +92,7 @@ hr {
 .light a {
   color: #313131;
 }
-#logo {
+#logo-container {
   display: inline;
   float: left;
   overflow: hidden;
@@ -100,13 +100,22 @@ hr {
   margin: 0 1.6666666666666667%;
   *width: 30% -correction;
   *margin: 0 1.6666666666666667% -correction;
-  background: url("../images/logo.png") no-repeat;
-  height: 93px;
-  text-indent: -999em;
+}
+#logo {
   margin: 12px 0;
+  padding-left: 18px;
 }
 #logo:hover {
-  background: url("../images/logo_hover.png") no-repeat;
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  -ms-transform-origin: top center;
+  -o-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation-name: swing;
+  -moz-animation-name: swing;
+  -ms-animation-name: swing;
+  -o-animation-name: swing;
+  animation-name: swing;
 }
 ul {
   float: right;
@@ -126,6 +135,7 @@ nav {
   letter-spacing: 0.15em;
   margin-bottom: 24px;
   margin-top: 24px;
+  float: right;
 }
 nav hgroup {
   margin-left: 30px;
@@ -267,7 +277,6 @@ author {
   height: 53px;
   width: 225px;
   float: right;
-  text-indent: -999em;
   -moz-box-shadow: 0px 2px 2px #222;
   -webkit-box-shadow: 0px 2px 2px #222;
   -moz-box-shadow: 0px;
@@ -374,6 +383,9 @@ author {
   *width: 30% -correction;
   *margin: 0 1.6666666666666667% -correction;
 }
+.project-info h1 {
+  margin-bottom: 0;
+}
 .project-info a {
   font-size: 0.85em;
   font-weight: bold;
@@ -381,6 +393,12 @@ author {
 }
 .project-info a:hover {
   color: #cc333f;
+}
+.serif {
+  font-family: "skolar";
+  font-style: italic;
+  font-size: 0.8em;
+  margin-top: 0;
 }
 .screenshot {
   display: inline;
@@ -499,10 +517,6 @@ author {
   *margin: 0 1.6666666666666667% -correction;
   margin-top: 2em;
 }
-#josh,
-#christian {
-  margin: 4em 0;
-}
 .bio {
   display: inline;
   float: left;
@@ -511,6 +525,9 @@ author {
   margin: 0 1.6666666666666667%;
   *width: 46.666666666666664% -correction;
   *margin: 0 1.6666666666666667% -correction;
+  margin-left: 0;
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 .bio img {
   display: inline;
@@ -535,6 +552,21 @@ author {
 }
 .bio hgroup a {
   color: #cc333f;
+}
+.bio h1 {
+  margin-bottom: 0;
+}
+.bio .double {
+  margin-bottom: 1em;
+}
+.pic {
+  padding-top: 1em;
+}
+.bio .serif {
+  margin-bottom: 2em;
+}
+#christian {
+  float: right;
 }
 /* About  */
 #banner-contact {
@@ -636,7 +668,7 @@ option {
   border: none;
 }
 select:hover {
-  background: #121212 url("../images/select-hover.png") no-repeat right center;
+  background: #121212 url("../images/select.png") no-repeat right center;
 }
 textarea {
   height: 16em;
@@ -667,5 +699,10 @@ input {
 @media screen and (max-width: 1140px) {
   .container {
     width: 100%;
+  }
+}
+@media screen and (min-width: 1490px) {
+  .banner {
+    background-size: 100%;
   }
 }
