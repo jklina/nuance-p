@@ -1,24 +1,32 @@
-
+var mailer = require("../mailer/contact-mailer")
 /*
  * GET home page.
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Home' })
+  res.render('index', { title: 'Home' });
 };
 
 exports.about = function(req, res){
-  res.render('about', { title: 'About' })
+  res.render('about', { title: 'About' });
 };
 
 exports.portfolio = function(req, res){
-  res.render('portfolio', { title: 'Portfolio' })
+  res.render('portfolio', { title: 'Portfolio' });
 };
 
 exports.contact = function(req, res){
-  res.render('contact', { title: 'Get in Touch' })
+  res.render('contact', { title: 'Get in Touch' });
+};
+
+exports.contactPost = function(req, res){
+  res.render('contact', { title: 'Get in Touch' });
+  console.log(req.body);
+  console.log(req.body.name);
+  console.log(req.body.message.email_address);
+  mailer.send_mail(req.body.name, req.body.message.email_address, req.body.message.body, req.body.message.budget);
 };
 
 exports.services = function(req, res){
-  res.render('services', { title: 'Services' })
+  res.render('services', { title: 'Services' });
 };

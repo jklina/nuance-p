@@ -34,6 +34,7 @@ app.get('/', routes.index);
 app.get('/about', routes.about);
 app.get('/portfolio', routes.portfolio);
 app.get('/contact', routes.contact);
+app.post('/contact', routes.contactPost);
 app.get('/services', routes.services);
 
 app.listen(3000);
