@@ -21,9 +21,6 @@ exports.contact = function(req, res){
 
 exports.contactPost = function(req, res){
   res.render('contact', { title: 'Get in Touch' });
-  console.log(req.body);
-  console.log(req.body.name);
-  console.log(req.body.message.email_address);
   mailer.send_mail(req.body.name, req.body.message.email_address, req.body.message.body, req.body.message.budget);
 };
 
