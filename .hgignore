@@ -3,3 +3,6 @@ syntax: glob
 .DS_Store
 *.swp
 *.swm
+node_modules
+.git
+.gitignore
