@@ -96,9 +96,9 @@ hr {
   display: inline;
   float: left;
   overflow: hidden;
-  width: 30%;
+  width: 13.333333333333334%;
   margin: 0 1.6666666666666667%;
-  *width: 30% -correction;
+  *width: 13.333333333333334% -correction;
   *margin: 0 1.6666666666666667% -correction;
 }
 #logo {
@@ -116,6 +116,17 @@ hr {
   -ms-animation-name: swing;
   -o-animation-name: swing;
   animation-name: swing;
+}
+#company-name {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 13.333333333333334%;
+  margin: 0 1.6666666666666667%;
+  *width: 13.333333333333334% -correction;
+  *margin: 0 1.6666666666666667% -correction;
+  margin-top: 3em;
+  margin-left: -40px;
 }
 ul {
   float: right;
@@ -153,6 +164,36 @@ nav .description {
 }
 .banner {
   height: 399px;
+}
+.banner-container {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 96.66666666666667%;
+  margin: 0 1.6666666666666667%;
+  *width: 96.66666666666667% -correction;
+  *margin: 0 1.6666666666666667% -correction;
+}
+.banner-title {
+  font-size: 2.25em;
+  color: #fff;
+  margin-top: 4em;
+  margin-bottom: 0;
+  margin-left: 8.472222222222221%;
+  text-shadow: 1px 1px 4px #111;
+}
+.banner-text {
+  color: #fff;
+  font-style: italic;
+  margin-top: 0;
+  margin-left: 8.472222222222221%;
+  text-shadow: 1px 1px 4px #111;
+}
+.banner-text a {
+  color: #fff;
+}
+.banner-text a:hover {
+  color: #cc333f;
 }
 #testimonial {
   display: inline;
@@ -256,7 +297,7 @@ author {
 }
 /* Index  */
 #banner-index {
-  background-image: url("../images/banner-index.png");
+  background-image: url("../images/banner-index.jpg");
 }
 #info {
   display: inline;
@@ -331,7 +372,7 @@ author {
 }
 /* Services  */
 #banner-services {
-  background-image: url("../images/banner-services.png");
+  background-image: url("../images/banner-services.jpg");
 }
 .half {
   display: inline;
@@ -362,7 +403,7 @@ author {
 }
 /* Portfolio  */
 #banner-portfolio {
-  background-image: url("../images/banner-portfolio.png");
+  background-image: url("../images/banner-portfolio.jpg");
 }
 .project {
   display: inline;
@@ -484,7 +525,7 @@ author {
 }
 /* About  */
 #banner-about {
-  background-image: url("../images/banner-about.png");
+  background-image: url("../images/banner-about.jpg");
 }
 #intro {
   display: inline;
@@ -570,7 +611,7 @@ author {
 }
 /* About  */
 #banner-contact {
-  background-image: url("../images/banner-contact.png");
+  background-image: url("../images/banner-contact.jpg");
 }
 form {
   margin-top: 3em;
