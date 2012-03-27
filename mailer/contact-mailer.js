@@ -3,8 +3,8 @@ var nodemailer = require("nodemailer");
 var transport = nodemailer.createTransport("SMTP",{
     service: "Gmail",
     auth: {
-        user: "username",
-        pass: "pass"
+        user: "bot@madewithnuance.com",
+        pass: "sorrydave"
     }
 });
 
